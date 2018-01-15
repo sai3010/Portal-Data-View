@@ -18,9 +18,12 @@ $(document).ready(function() {
     {
         var title = document.getElementById('title').value.toUpperCase();
         var msg = document.getElementById('msg').value.toUpperCase();
+        var date=new Date();
+        date.getTime();
         var data = {
                 title:title,
                 message:msg,
+                date:date.toString()
             }
 
             var updates = {};
