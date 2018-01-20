@@ -16,11 +16,11 @@
             <ul id="nav-mobile" class="right">
                 <li><a href="index.html">View Data</a></li>
                 <li><a href="view.html">View Updates</a></li>
-                <li><a href="remove.html">Remove an Update</a></li>
+                <li><a href="push.html">Push Updates</a></li>
             </ul>
         </div>
     </nav>
-    <h2 align="center">PUSH UPDATES</h2>
+    <h2 align="center">REMOVE UPDATES</h2>
     <div class="container">
         <div class="row">
             <form class=" form col s12 m12 l12">
@@ -28,17 +28,12 @@
                     <div class="row">
                         <div class="input-field col s12 m12 l12">
                             <input id="title" type="text" class="validate">
-                            <label for="icon_prefix">TITLE</label>
-                        </div>
-                        <div class="input-field col s12 m12 l12">
-                            <textarea id="msg" class="materialize-textarea"></textarea>
-          					<label for="textarea1">MESSAGE</label>
+                            <label for="icon_prefix">ENTER TITLE TO REMOVE</label>
                         </div>
                     </div>
                 </div>
                 <div class="input-field col s12 m12 l12" id="sbutton">
-                        <button class="btn waves-effect waves-light col offset-l3 offset-m3 s12 m5 l5" type="submit" name="action" onclick="send_msg();">SEND
-                            <i class="material-icons right">send</i>
+                        <button class="btn waves-effect waves-light col offset-l3 offset-m3 s12 m5 l5" type="submit" name="action" onclick="remove_msg();">Remove
                         </button>
                     </div>
             </form>
@@ -48,6 +43,6 @@
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/remove.js"></script>
 </body>
 </html>
